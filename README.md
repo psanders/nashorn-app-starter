@@ -1,4 +1,4 @@
-# Nashorn Gradle Starter: Start with Oracle Nashorn in Minutes
+# Nashorn Gradle Starter
 
 Assuming you have `Git`, `Gradle`, and `Java` you only need to run this
 
