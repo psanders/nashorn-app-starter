@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 main_js="$(pwd)/main.js"
 
 for i in $(ls lib); do
