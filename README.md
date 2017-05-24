@@ -3,7 +3,7 @@
 This starter uses BabelJS to bring modern Javascript to the JVM. Use Gradle to manage your java dependencies
 and NPM to install your node packages.
 
-## Depends on:
+## Depends on
 
 - JDK8
 - NPM
