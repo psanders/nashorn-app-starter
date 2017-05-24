@@ -19,6 +19,7 @@ and NPM to install your node packages.
 
 ```bash
 git clone https://github.com/psanders/nashorn-app-starter
+cd nashorn-app-starter
 npm i                   # Install npm stuff
 mv node_modules .libs   # I know I could not yet find a better way to do this
 npm run build           # Transpile the code to ES5
