@@ -13,9 +13,9 @@ var assertTrue = Packages.org.junit.Assert.assertTrue
 var assertFalse = Packages.org.junit.Assert.assertFalse
 var assertArrayEquals = Packages.org.junit.Assert.assertArrayEquals
 var assertNotNull = Packages.org.junit.Assert.assertNotNull
-var assertSame = Packages.org.junit.Assert.assertSame;
-var assertNotSame = Packages.org.junit.Assert.assertNotSame;
-var fail = Packages.org.junit.Assert.fail;
+var assertSame = Packages.org.junit.Assert.assertSame
+var assertNotSame = Packages.org.junit.Assert.assertNotSame
+var fail = Packages.org.junit.Assert.fail
 
 var THelper =  {
     test: function (path, name) {
