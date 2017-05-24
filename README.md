@@ -12,7 +12,7 @@ and NPM to install your node packages.
 ## Features
 
 - ES6 to ES5 via BabelJS
-- NPM support via JVM-NPM
+- NPM Support via JVM-NPM
 - JUnit Test Helper
 
 ## Get Starter
