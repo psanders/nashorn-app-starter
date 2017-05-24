@@ -1,0 +1,29 @@
+{
+  "name": "nashorn-app-starter",
+  "version": "1.0.0",
+  "description": "An app skeleton to quickly start with Nashorn",
+  "keywords": ["nashorn", "jvm", "java", "es6"],
+  "author": "Pedro S. Sanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psanders/nashorn-app-starter/issues"
+  },
+  "homepage": "https://github.com/psanders/nashorn-app-starter",
+  "scripts": {
+    "build": "NODE_PATH=.libs/node_modules && .libs/node_modules/.bin/babel --out-dir .libs/node_modules src",
+    "start": "NODE_PATH=.libs/node_modules && echo \"load('.libs/node_modules/jvm-npm/src/main/javascript/jvm-npm.js');\" > .start.js && cat .libs/node_modules/main.js >> .start.js && jjs .start.js && rm .start.js",
+    "test": "NODE_PATH=.libs/node_modules && src/test_helper.js -- 'calc/test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psanders/nashorn-app-starter.git"
+  },
+  "dependencies": {
+    "jvm-npm": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "6.24.1"
+  },
+  "engine": "nashorn > 1.8"
+}
