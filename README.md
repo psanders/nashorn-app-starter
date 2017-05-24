@@ -1,4 +1,4 @@
-# 🦏 A skeleton to quickly start with Oracle Nashorn
+# A skeleton to quickly start with Oracle Nashorn
 
 This starter uses BabelJS to bring modern Javascript to the JVM. Use Gradle to manage your java dependencies
 and NPM to install your node packages.
