@@ -1,4 +1,4 @@
-#!/usr/bin/env jjs -cp .libs/jars/junit-4.12.jar:.libs/jars/hamcrest-core-1.3.jar -Dlog4j.configurationFile=./config/log4j2.xml -fv=false -doe=true
+#!/usr/bin/env jjs -cp .libs/jars/junit-4.12.jar:.libs/jars/hamcrest-core-1.3.jar -fv=false -doe=true
 
 load('.libs/node_modules/jvm-npm/src/main/javascript/jvm-npm.js')
 
