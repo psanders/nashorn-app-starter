@@ -15,7 +15,7 @@ and NPM to install your node packages.
 - [x] NPM support via jvm-npm
 - [ ] Fully support Junit Testing
 
-## Get Starter
+## Get started
 
 **Clone and prep**
 
