@@ -11,9 +11,9 @@ and NPM to install your node packages.
 
 ## Todo
 
-- [x] es5 to es6 transpilation with babeljs
-- [x] npm support via jvm-npm
-- [ ] fully support junit testing
+- [x] ES5 to ES6 transpilation with BabelJS
+- [x] NPM support via jvm-npm
+- [ ] Fully support Junit Testing
 
 ## Get Starter
 
