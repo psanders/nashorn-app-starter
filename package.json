@@ -1,6 +1,6 @@
 {
   "name": "nashorn-app-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An app skeleton to quickly start with Nashorn",
   "keywords": ["nashorn", "jvm", "java", "es6"],
   "author": "Pedro S. Sanders",
@@ -11,8 +11,9 @@
   "homepage": "https://github.com/psanders/nashorn-app-starter",
   "scripts": {
     "build": "export NODE_PATH=.libs/node_modules && .libs/node_modules/.bin/babel --out-dir .libs/node_modules src",
-    "start": "export NODE_PATH=.libs/node_modules && echo \"load('.libs/node_modules/jvm-npm/src/main/javascript/jvm-npm.js');\" > .start.js && cat .libs/node_modules/main.js >> .start.js && jjs .start.js && rm .start.js",
-    "test": "export NODE_PATH=.libs/node_modules && src/test_helper.js -- 'calc/test.js'"
+    "start": "export NODE_PATH=.libs/node_modules && jjs start.js",
+    "test": "export NODE_PATH=.libs/node_modules && ./testh.js -- 'calc/test.js'",
+    "shadowJar": "gradle shadowJar"
   },
   "repository": {
     "type": "git",

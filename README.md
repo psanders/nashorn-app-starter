@@ -9,11 +9,11 @@ and NPM to install your node packages.
 - NPM
 - Gradle (Recommended)
 
-## Features
+## Todo
 
-- ES6 to ES5 via BabelJS
-- NPM Support via JVM-NPM
-- JUnit Test Helper
+- [x] transpile to Es6
+- [x] npm support via jvm-npm
+- [ ] fully support junit testing
 
 ## Get Starter
 
@@ -23,16 +23,17 @@ and NPM to install your node packages.
 git clone https://github.com/psanders/nashorn-app-starter
 cd nashorn-app-starter
 npm i                   # Install npm stuff
-mv node_modules .libs   # I know I could not yet find a better way to do this
+mv node_modules .libs   # Fugly, right? I could not yet find a better way to do this
 ```
+
+Optionally you could run `npm run shadowJar` to add new dependencies to the `.libs\bundle.deps.jar`
 
 **Transpile, test, and run**
 
 ```bash
 npm run build           # Transpile the code to ES5
 npm test                # Run the unit test
-npm start               # This will only work in unix-like systems.
+npm start
 ```
 
-> The comand 'npm start' will only work in unix-like systems. I'm working in fixing this.
 > NPM support can only work out of the box for pure JS NPM modules. Please see [jvm-npm](https://github.com/nodyn/jvm-npm)

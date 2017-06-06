@@ -3,8 +3,8 @@
  */
 import Calc from 'calc/calc'
 
-// The ./test/test_helper will search for the "testGroup" variable
-// Not very elegant but it works
+// The `src/test_helper.js` script will search for the "testGroup" variable
+// Not very elegant but it works well
 export let testGroup = { name: "Calculator Test" }
 
 testGroup.testAdd = function() {

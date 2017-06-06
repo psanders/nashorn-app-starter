@@ -1,4 +1,4 @@
-#!/usr/bin/env jjs -cp .libs/jars/junit-4.12.jar:.libs/jars/hamcrest-core-1.3.jar -fv=false -doe=true
+#!/usr/bin/jjs -cp .libs/bundle.deps.jar -doe=true -ot=true -scripting=true
 
 load('.libs/node_modules/jvm-npm/src/main/javascript/jvm-npm.js')
 
@@ -16,6 +16,10 @@ var assertNotNull = Packages.org.junit.Assert.assertNotNull
 var assertSame = Packages.org.junit.Assert.assertSame
 var assertNotSame = Packages.org.junit.Assert.assertNotSame
 var fail = Packages.org.junit.Assert.fail
+
+var ANSI_GREEN = "\u001B[32m"
+var ANSI_RESET = "\u001B[0m"
+var ANSI_RED = "\u001B[31m"
 
 var THelper =  {
     test: function (path, name) {
@@ -46,10 +50,9 @@ var THelper =  {
             var result = new TCase().run()
 
             if (result.wasSuccessful()) {
-                print(' ', 'test [', funName, ']','=> passed');
+                print(' ', '[', funName, '] =>', ANSI_GREEN + 'passed' + ANSI_RESET)
             } else {
-                print(' ', 'test [', funName, ']','=> failed');
-
+                print(' ', '[', funName, '] =>', ANSI_RED + 'failed' + ANSI_RESET)
                 var errors = result.errors()
                 while (errors.hasMoreElements()) {
                     print(' ', '[x]', errors.nextElement());

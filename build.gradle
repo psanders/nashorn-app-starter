@@ -1,4 +1,7 @@
-apply plugin: "java"
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '2.0.0'
+}
 
 dependencies {
     compile "junit:junit:4.+"
@@ -8,7 +11,12 @@ repositories {
     mavenCentral()
 }
 
-task install(type: Copy) {
-    from sourceSets.main.runtimeClasspath
-    into ".libs/jars"
+tasks.withType(Jar) {
+    destinationDir = file("$rootDir/.libs")
+}
+
+shadowJar {
+    baseName = 'bundle.deps'
+    classifier = null
+    version = null
 }
