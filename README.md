@@ -11,7 +11,7 @@ and NPM to install your node packages.
 
 ## Todo
 
-- [x] transpile to Es6
+- [x] es5 to es6 transpilation with babeljs
 - [x] npm support via jvm-npm
 - [ ] fully support junit testing
 
