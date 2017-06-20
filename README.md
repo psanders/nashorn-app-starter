@@ -22,17 +22,17 @@ and NPM to install your node packages.
 ```bash
 git clone https://github.com/psanders/nashorn-app-starter
 cd nashorn-app-starter
-npm i                   # Install npm stuff
+npm i
 mv node_modules .libs   # Fugly, right? I could not yet find a better way to do this
 ```
 
-Optionally you could run `npm run shadowJar` to add new dependencies to the `.libs\bundle.deps.jar`
+> Optionally you could run `npm run shadowJar` to add new dependencies to the `.libs\bundle.deps.jar`
 
 **Transpile, test, and run**
 
 ```bash
-npm run build           # Transpile the code to ES5
-npm test                # Run the unit test
+npm run build           # Transpile code
+npm test
 npm start
 ```
 
